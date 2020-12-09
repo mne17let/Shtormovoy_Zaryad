@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "40376158353",
+    "firebase_url": "https://shtormovoyzaryad2019.firebaseio.com",
+    "project_id": "shtormovoyzaryad2019",
+    "storage_bucket": "shtormovoyzaryad2019.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40376158353:android:110fb91d86f1f7edf69730",
+        "android_client_info": {
+          "package_name": "com.example.shtormovoy_zaryad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "40376158353-lj8gtn7q47air7bu27skkv66ac9hr5no.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAA0Ct82uduEOd0Pirmnk_qdpjDrd279g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "40376158353-lj8gtn7q47air7bu27skkv66ac9hr5no.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

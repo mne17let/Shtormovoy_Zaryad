@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Shtormovoy_Zaryad</string>
+
+    <string name="bottom_pole">Поля</string>
+    <string name="bottom_chats">Беседы</string>
+    <string name="bottom_profile">Профиль</string>
+
+    <string name="pager_pole_vse">Все поля</string>
+    <string name="pager_pole_fav">Избранное</string>
+
+</resources>
