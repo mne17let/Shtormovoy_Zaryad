@@ -56,6 +56,7 @@ class MainActivity : AppCompatActivity() {
             profile_pos -> showFragment(fr_profile)
         }
 
+        throw RuntimeException()
     }
 
     companion object {
