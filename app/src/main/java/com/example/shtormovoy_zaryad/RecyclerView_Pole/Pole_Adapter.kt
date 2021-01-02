@@ -8,9 +8,9 @@ import com.bumptech.glide.Glide
 import com.example.shtormovoy_zaryad.R
 import kotlinx.android.synthetic.main.odno_pole_recyclerview.view.*
 
-class Pole_Adapter(var click: OnPoleVseCklick) : RecyclerView.Adapter<Pole_Adapter.Pole_View_Holder>(){
+/*class Pole_Adapter(var click: OnPoleVseCklick) : RecyclerView.Adapter<Pole_Adapter.Pole_View_Holder>(){
 
-    var fields: List<Data_Pole> = ArrayList()
+    *//*var fields: List<Data_Pole> = ArrayList()
     set(array) {
         field = array
         notifyDataSetChanged()
@@ -47,9 +47,10 @@ class Pole_Adapter(var click: OnPoleVseCklick) : RecyclerView.Adapter<Pole_Adapt
 
     override fun getItemCount(): Int {
         return fields.size
-    }
-}
+    }*//*
+}*/
 
-interface OnPoleVseCklick {
+
+/*interface OnPoleVseCklick {
     fun onPoleClick(pole: Data_Pole, position: Int)
-}
+}*/

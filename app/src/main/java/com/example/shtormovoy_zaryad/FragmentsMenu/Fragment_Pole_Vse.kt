@@ -22,8 +22,6 @@ import com.example.shtormovoy_zaryad.HelpClasses.Singleton_Pole
 import com.example.shtormovoy_zaryad.MainActivity
 import com.example.shtormovoy_zaryad.R
 import com.example.shtormovoy_zaryad.RecyclerView_Pole.Data_Pole
-import com.example.shtormovoy_zaryad.RecyclerView_Pole.OnPoleVseCklick
-import com.example.shtormovoy_zaryad.RecyclerView_Pole.Pole_Adapter
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
@@ -32,9 +30,11 @@ import com.google.firebase.storage.FirebaseStorage
 import kotlinx.android.synthetic.main.fragment_pole_vse.*
 import kotlinx.android.synthetic.main.fragment_pole_vse.view.*
 
+/*
 class Fragment_Pole_Vse : Fragment(R.layout.fragment_pole_vse), OnPoleVseCklick {
 
-    val adapter = Pole_Adapter(this)
+    */
+/*val adapter = Pole_Adapter(this)
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -53,6 +53,7 @@ class Fragment_Pole_Vse : Fragment(R.layout.fragment_pole_vse), OnPoleVseCklick 
 
     override fun onPoleClick(pole: Data_Pole, position: Int) {
 
-    }
+    }*//*
 
-}
+
+}*/

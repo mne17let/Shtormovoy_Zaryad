@@ -1744,10 +1744,10 @@ id beginOnFirstDraw
 id beginning
 id blocking
 id bottom
-id bottom_menu_chats
-id bottom_menu_pole
-id bottom_menu_profile
-id bottom_nav_id
+id bottomMenuItemXML_Chat
+id bottomMenuItemXML_Profile
+id bottomMenuItemXML_Stadium
+id bottomNavigationView
 id bounce
 id buttonPanel
 id cancel_button
@@ -1824,7 +1824,7 @@ id flip
 id floating
 id forever
 id fragment_container_view_tag
-id frame_to_replace
+id frameForFragments
 id ghost_view
 id ghost_view_holder
 id glide_custom_view_target_tag
@@ -2134,7 +2134,8 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_pole_fav
 layout fragment_pole_vse
-layout main_layout
+layout layout_main_activity
+layout layout_stadiums_fragment_bottom_menu
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -2191,7 +2192,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
-menu bottom_main_menu
+menu bottom_navigation_menu_xml
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
@@ -2224,9 +2225,9 @@ string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string app_name
 string appbar_scrolling_view_behavior
-string bottom_chats
-string bottom_pole
-string bottom_profile
+string bottomMenuItemXML_Chat
+string bottomMenuItemXML_Profile
+string bottomMenuItemXML_Stadium
 string bottom_sheet_behavior
 string character_counter_content_description
 string character_counter_overflowed_content_description

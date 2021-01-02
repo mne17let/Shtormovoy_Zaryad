@@ -11,7 +11,7 @@ import com.google.firebase.database.ValueEventListener
 import kotlin.concurrent.fixedRateTimer
 
 object Singleton_Pole {
-    val myBase = FirebaseDatabase.getInstance().reference.child("Поля")
+    /*val myBase = FirebaseDatabase.getInstance().reference.child("Поля")
 
     val mutable_fields: MutableLiveData<List<Data_Pole>> = MutableLiveData()
 
@@ -40,7 +40,7 @@ object Singleton_Pole {
 
     fun getLiveFields() : MutableLiveData<List<Data_Pole>> = mutable_fields
 
-    private fun convertDataToPole (data : DataSnapshot) = data.getValue(Data_Pole::class.java)
+    private fun convertDataToPole (data : DataSnapshot) = data.getValue(Data_Pole::class.java)*/
 
 
 }

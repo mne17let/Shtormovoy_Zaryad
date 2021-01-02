@@ -19,7 +19,7 @@ import kotlinx.android.synthetic.main.spisok_pole_fragment.*
 
 class Fragment_Pole : Fragment() {
 
-    private lateinit var tabLayout: TabLayout
+    /*private lateinit var tabLayout: TabLayout
     private lateinit var viewPager2: ViewPager2
 
     private lateinit var tab1: TabLayout.Tab
@@ -114,5 +114,5 @@ class Fragment_Pole : Fragment() {
 
     companion object {
         var cur_fr = 0
-    }
+    }*/
 }

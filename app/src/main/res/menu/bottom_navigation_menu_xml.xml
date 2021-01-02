@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottomMenuItemXML_Stadium"
+        android:icon="@drawable/ic_pole"
+        android:title="@string/bottomMenuItemXML_Stadium"/>
+
+    <item
+        android:id="@+id/bottomMenuItemXML_Chat"
+        android:icon="@drawable/ic_chat"
+        android:title="@string/bottomMenuItemXML_Chat"/>
+
+    <item
+        android:id="@+id/bottomMenuItemXML_Profile"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/bottomMenuItemXML_Profile"/>
+
+</menu>

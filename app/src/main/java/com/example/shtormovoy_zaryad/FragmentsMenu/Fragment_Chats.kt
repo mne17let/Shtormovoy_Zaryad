@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import com.example.shtormovoy_zaryad.R
 
 class Fragment_Chats : Fragment() {
-
+/*
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -17,5 +17,5 @@ class Fragment_Chats : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.chats_fragment, container, false)
         return view
-    }
+    }*/
 }

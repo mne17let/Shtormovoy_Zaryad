@@ -10,12 +10,12 @@ import com.example.shtormovoy_zaryad.R
 class Fragment_Pole_Fav : Fragment() {
 
 
-    override fun onCreateView(
+    /*override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_pole_fav, container, false)
         return view
-    }
+    }*/
 }

@@ -1,15 +1,33 @@
 package com.example.shtormovoy_zaryad
 
 import android.os.Bundle
+import android.os.PersistableBundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction.*
 import com.example.shtormovoy_zaryad.FragmentsMenu.*
-import kotlinx.android.synthetic.main.main_layout.*
+import com.example.shtormovoy_zaryad.ui.Fragment_Stadiums_BottomMenu
+import kotlinx.android.synthetic.main.layout_main_activity.*
+
 
 class MainActivity : AppCompatActivity() {
 
-    val fr_pole = Fragment_Pole()
+    val fragmentManager = supportFragmentManager
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.layout_main_activity)
+        setStartFragment()
+    }
+
+
+    fun setStartFragment() {
+        fragmentManager.beginTransaction().replace(R.id.frameForFragments, Fragment_Stadiums_BottomMenu()).commit()
+    }
+
+
+    /*val fr_pole = Fragment_Pole()
     val fr_chats = Fragment_Chats()
     val fr_profile = Fragment_Profile()
 
@@ -65,5 +83,5 @@ class MainActivity : AppCompatActivity() {
         val profile_pos = 2
 
         var cur_fr_chislo = no_pos
-    }
+    }*/
 }
