@@ -2134,7 +2134,9 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_pole_fav
 layout fragment_pole_vse
+layout layout_chats_fragment_bottom_menu
 layout layout_main_activity
+layout layout_profile_fragment_bottom_menu
 layout layout_stadiums_fragment_bottom_menu
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions

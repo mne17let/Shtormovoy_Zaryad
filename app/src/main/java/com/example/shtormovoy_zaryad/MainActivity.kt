@@ -1,13 +1,20 @@
 package com.example.shtormovoy_zaryad
 
+import android.content.ClipData
 import android.os.Bundle
 import android.os.PersistableBundle
+import android.util.Log
+import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction.*
 import com.example.shtormovoy_zaryad.FragmentsMenu.*
+import com.example.shtormovoy_zaryad.ui.Fragment_Chats_BottomMenu
+import com.example.shtormovoy_zaryad.ui.Fragment_Profile_BottomMenu
 import com.example.shtormovoy_zaryad.ui.Fragment_Stadiums_BottomMenu
+import com.google.android.material.bottomnavigation.BottomNavigationItemView
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.layout_main_activity.*
 
 
@@ -15,16 +22,44 @@ class MainActivity : AppCompatActivity() {
 
     val fragmentManager = supportFragmentManager
 
+    val fragmentStadiums = Fragment_Stadiums_BottomMenu()
+    val fragmentChats = Fragment_Chats_BottomMenu()
+    val fragmentProfile = Fragment_Profile_BottomMenu()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_main_activity)
         setStartFragment()
+        setListenerOnBottomNavigation()
     }
 
 
     fun setStartFragment() {
-        fragmentManager.beginTransaction().replace(R.id.frameForFragments, Fragment_Stadiums_BottomMenu()).commit()
+        fragmentManager.beginTransaction().replace(R.id.frameForFragments, fragmentStadiums).commit()
     }
+
+
+
+    fun setListenerOnBottomNavigation() {
+        bottomNavigationView.setOnNavigationItemSelectedListener(object : BottomNavigationView.OnNavigationItemSelectedListener{
+            override fun onNavigationItemSelected(item: MenuItem): Boolean {
+                when (item.itemId) {
+                    R.id.bottomMenuItemXML_Stadium -> setBottomNavigationFragment(fragmentStadiums)
+                    R.id.bottomMenuItemXML_Chat -> setBottomNavigationFragment(fragmentChats)
+                    R.id.bottomMenuItemXML_Profile -> setBottomNavigationFragment(fragmentProfile)
+                }
+                return true
+            }
+        })
+    }
+
+    fun setBottomNavigationFragment(fragment: Fragment) {
+        fragmentManager.beginTransaction().replace(R.id.frameForFragments, fragment).commit()
+    }
+
+
+
+
 
 
     /*val fr_pole = Fragment_Pole()
