@@ -1763,7 +1763,6 @@ id chip1
 id chip2
 id chip3
 id chip_group
-id chislo_l_pole_recview
 id chronometer
 id clear_text
 id clip_horizontal
@@ -1840,11 +1839,17 @@ id honorRequest
 id icon
 id icon_group
 id icon_only
+id id_countpeople_stadium_recycler_view
+id id_countpeople_text_stadium_recycler_view
+id id_mark_stadium_recycler_view
+id id_mark_text_stadium_recycler_view
+id id_name_stadium_recycler_view
+id id_photo_stadium_recycler_view
+id id_recyclerViewAllStadiums
 id ifRoom
 id ignore
 id ignoreRequest
 id image
-id image_pole_recview
 id info
 id invisible
 id italic
@@ -1861,7 +1866,6 @@ id line3
 id linear
 id listMode
 id list_item
-id mark_pole_recview
 id masked
 id message
 id middle
@@ -1895,7 +1899,6 @@ id mtrl_picker_text_input_range_end
 id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id multiply
-id name_pole_recview
 id nav_controller_view_tag
 id nav_host_fragment_container
 id navigation_header_container
@@ -1927,7 +1930,6 @@ id progress_circular
 id progress_horizontal
 id radio
 id ratio
-id rec_view_vse_fields
 id rectangles
 id reverseSawtooth
 id right
@@ -1989,7 +1991,6 @@ id stretch
 id submenuarrow
 id submit_area
 id tabMode
-id tab_layout
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
 id tag_accessibility_heading
@@ -2009,10 +2010,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textView
-id textView2
-id textView3
-id textView5
-id textView6
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter
@@ -2044,7 +2041,6 @@ id up
 id useLogo
 id view
 id view_offset_helper
-id view_pager_2_layout
 id visible
 id visible_removing_fragment_view_tag
 id wide
@@ -2115,7 +2111,6 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout chats_fragment
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2132,9 +2127,8 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout fragment_pole_fav
-layout fragment_pole_vse
 layout layout_chats_fragment_bottom_menu
+layout layout_for_one_stadium_recycler_view
 layout layout_main_activity
 layout layout_profile_fragment_bottom_menu
 layout layout_stadiums_fragment_bottom_menu
@@ -2172,13 +2166,9 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
-layout odno_pole_layout
-layout odno_pole_recyclerview
-layout profile_fragment
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
-layout spisok_pole_fragment
 layout support_simple_spinner_dropdown_item
 layout test_action_chip
 layout test_chip_zero_corner_radius
@@ -2307,8 +2297,6 @@ string mtrl_picker_toggle_to_text_input_mode
 string mtrl_picker_toggle_to_year_selection
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
-string pager_pole_fav
-string pager_pole_vse
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -2317,6 +2305,8 @@ string path_password_strike_through
 string project_id
 string search_menu_title
 string status_bar_notification_info_overflow
+string textForCountPeopleTextView
+string textForMarkTextView
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

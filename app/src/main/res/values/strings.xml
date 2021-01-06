@@ -5,4 +5,9 @@
     <string name="bottomMenuItemXML_Chat">Беседы</string>
     <string name="bottomMenuItemXML_Profile">Профиль</string>
 
+
+    <string name="textForCountPeopleTextView">Сейчас на поле:</string>
+    <string name="textForMarkTextView">Оценка:</string>
+
+
 </resources>

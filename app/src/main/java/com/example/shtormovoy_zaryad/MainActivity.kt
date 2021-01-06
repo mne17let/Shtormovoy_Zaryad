@@ -5,16 +5,17 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.example.shtormovoy_zaryad.ui.Fragment_Chats_BottomMenu
-import com.example.shtormovoy_zaryad.ui.Fragment_Profile_BottomMenu
-import com.example.shtormovoy_zaryad.ui.Fragment_Stadiums_BottomMenu
+import androidx.recyclerview.widget.RecyclerView
+import com.example.shtormovoy_zaryad.Model.ObjectModels.StadiumModel
+import com.example.shtormovoy_zaryad.ui.BottomMenuFragments.Fragment_Chats_BottomMenu
+import com.example.shtormovoy_zaryad.ui.BottomMenuFragments.Fragment_Profile_BottomMenu
+import com.example.shtormovoy_zaryad.ui.BottomMenuFragments.Fragment_Stadiums_BottomMenu
+import com.example.shtormovoy_zaryad.ui.StadiumsFragmentRecyclerViewAdapter.StadiumsFragmentRecyclerViewAdapter
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.layout_main_activity.*
 
 
 class MainActivity : AppCompatActivity() {
-
-    val fragmentManager = supportFragmentManager
 
     var currentFragmentCode = 0
 
@@ -31,7 +32,7 @@ class MainActivity : AppCompatActivity() {
 
 
     fun setStartFragment() {
-        fragmentManager.beginTransaction().replace(R.id.frameForFragments, fragmentStadiums).commit()
+        supportFragmentManager.beginTransaction().replace(R.id.frameForFragments, fragmentStadiums).commit()
     }
 
 
@@ -65,6 +66,6 @@ class MainActivity : AppCompatActivity() {
 
 
     fun setBottomNavigationFragment(fragment: Fragment) {
-        fragmentManager.beginTransaction().replace(R.id.frameForFragments, fragment).commit()
+        supportFragmentManager.beginTransaction().replace(R.id.frameForFragments, fragment).commit()
     }
 }
