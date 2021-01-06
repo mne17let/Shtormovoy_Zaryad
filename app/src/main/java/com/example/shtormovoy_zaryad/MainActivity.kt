@@ -6,6 +6,7 @@ import android.os.PersistableBundle
 import android.util.Log
 import android.view.MenuItem
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction.*
@@ -21,6 +22,8 @@ import kotlinx.android.synthetic.main.layout_main_activity.*
 class MainActivity : AppCompatActivity() {
 
     val fragmentManager = supportFragmentManager
+
+    var currentFragmentCode = 0
 
     val fragmentStadiums = Fragment_Stadiums_BottomMenu()
     val fragmentChats = Fragment_Chats_BottomMenu()
@@ -44,14 +47,29 @@ class MainActivity : AppCompatActivity() {
         bottomNavigationView.setOnNavigationItemSelectedListener(object : BottomNavigationView.OnNavigationItemSelectedListener{
             override fun onNavigationItemSelected(item: MenuItem): Boolean {
                 when (item.itemId) {
-                    R.id.bottomMenuItemXML_Stadium -> setBottomNavigationFragment(fragmentStadiums)
-                    R.id.bottomMenuItemXML_Chat -> setBottomNavigationFragment(fragmentChats)
-                    R.id.bottomMenuItemXML_Profile -> setBottomNavigationFragment(fragmentProfile)
+                    R.id.bottomMenuItemXML_Stadium -> checkingCurrentFragment(0)
+                    R.id.bottomMenuItemXML_Chat -> checkingCurrentFragment(1)
+                    R.id.bottomMenuItemXML_Profile -> checkingCurrentFragment(2)
                 }
                 return true
             }
         })
     }
+
+    fun checkingCurrentFragment(checkCode: Int) {
+        if (checkCode == currentFragmentCode) {
+            Toast.makeText(this,"Same Fragment", Toast.LENGTH_SHORT).show()
+            return
+        } else {
+            when (checkCode) {
+                0 -> setBottomNavigationFragment(fragmentStadiums)
+                1 -> setBottomNavigationFragment(fragmentChats)
+                2 -> setBottomNavigationFragment(fragmentProfile)
+            }
+            currentFragmentCode = checkCode
+        }
+    }
+
 
     fun setBottomNavigationFragment(fragment: Fragment) {
         fragmentManager.beginTransaction().replace(R.id.frameForFragments, fragment).commit()
