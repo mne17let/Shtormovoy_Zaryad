@@ -5,7 +5,4 @@
     <string name="bottomMenuItemXML_Chat">Беседы</string>
     <string name="bottomMenuItemXML_Profile">Профиль</string>
 
-    <string name="pager_pole_vse">Все поля</string>
-    <string name="pager_pole_fav">Избранное</string>
-
 </resources>
