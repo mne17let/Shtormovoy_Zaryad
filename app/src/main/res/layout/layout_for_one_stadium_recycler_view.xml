@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.0">
 
         <ImageView
-            android:id="@+id/id_photo_stadium_recycler_view"
+            android:id="@+id/id_photo_stadium_recyclerview"
             android:layout_width="wrap_content"
             android:layout_height="220dp"
             android:layout_marginStart="10dp"
@@ -32,7 +32,7 @@
             app:srcCompat="@drawable/photo_pole" />
 
         <TextView
-            android:id="@+id/id_name_stadium_recycler_view"
+            android:id="@+id/id_name_stadium_recyclerview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -56,7 +56,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/id_mark_stadium_recycler_view"
+                android:id="@+id/id_mark_stadium_recyclerview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|end"
@@ -71,7 +71,7 @@
                 app:layout_constraintEnd_toEndOf="parent" />
 
             <TextView
-                android:id="@+id/id_countpeople_stadium_recycler_view"
+                android:id="@+id/id_countpeople_stadium_recyclerview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|end"
@@ -83,10 +83,10 @@
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/id_countpeople_text_stadium_recycler_view" />
+                app:layout_constraintStart_toEndOf="@+id/id_countpeople_text_stadium_recyclerview" />
 
             <TextView
-                android:id="@+id/id_countpeople_text_stadium_recycler_view"
+                android:id="@+id/id_countpeople_text_stadium_recyclerview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
@@ -100,7 +100,7 @@
                 app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
-                android:id="@+id/id_mark_text_stadium_recycler_view"
+                android:id="@+id/id_mark_text_stadium_recyclerview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom|end"
@@ -111,7 +111,7 @@
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/id_mark_stadium_recycler_view" />
+                app:layout_constraintEnd_toStartOf="@+id/id_mark_stadium_recyclerview" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -19,12 +19,12 @@ class StadiumsFragmentRecyclerViewAdapter: RecyclerView.Adapter<StadiumsFragment
     }
 
     class ViewHolderStadium(view: View): RecyclerView.ViewHolder(view) {
-        var textMark: TextView = view.findViewById(R.id.id_mark_text_stadium_recycler_view)
-        var textCount: TextView = view.findViewById(R.id.id_countpeople_text_stadium_recycler_view)
-        var textName: TextView = view.findViewById(R.id.id_name_stadium_recycler_view)
-        var mark: TextView = view.findViewById(R.id.id_mark_stadium_recycler_view)
-        var countPeople: TextView = view.findViewById(R.id.id_countpeople_stadium_recycler_view)
-        var photoStadium: ImageView = view.findViewById(R.id.id_photo_stadium_recycler_view)
+        var textMark: TextView = view.findViewById(R.id.id_mark_text_stadium_recyclerview)
+        var textCount: TextView = view.findViewById(R.id.id_countpeople_text_stadium_recyclerview)
+        var textName: TextView = view.findViewById(R.id.id_name_stadium_recyclerview)
+        var mark: TextView = view.findViewById(R.id.id_mark_stadium_recyclerview)
+        var countPeople: TextView = view.findViewById(R.id.id_countpeople_stadium_recyclerview)
+        var photoStadium: ImageView = view.findViewById(R.id.id_photo_stadium_recyclerview)
 
 
         fun bind(one_stadium: StadiumModel) {
