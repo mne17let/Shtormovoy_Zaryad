@@ -39,11 +39,11 @@ class FragmentWithBottomNavigation : Fragment() {
 
 
     fun showStartBottomNavigationFragment() {
-        childFragmentManager.beginTransaction().replace(R.id.frameForBottomNavigationFragments, fragmentStadiums)
+        childFragmentManager.beginTransaction().replace(R.id.frameForBottomNavigationFragments, fragmentStadiums).commit()
     }
 
     fun showBottomNavigationFragment(fragment: Fragment) {
-        childFragmentManager.beginTransaction().replace(R.id.frameForBottomNavigationFragments, fragment)
+        childFragmentManager.beginTransaction().replace(R.id.frameForBottomNavigationFragments, fragment).commit()
     }
 
     fun checkingCurrentFragment(checkCode: Int) {

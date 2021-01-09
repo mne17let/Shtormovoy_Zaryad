@@ -1769,6 +1769,7 @@ id clip_horizontal
 id clip_vertical
 id collapseActionView
 id confirm_button
+id const_parent
 id container
 id content
 id contentPanel
@@ -1823,7 +1824,7 @@ id flip
 id floating
 id forever
 id fragment_container_view_tag
-id frameForFragments
+id frameForBottomNavigationFragments
 id ghost_view
 id ghost_view_holder
 id glide_custom_view_target_tag
@@ -1839,12 +1840,12 @@ id honorRequest
 id icon
 id icon_group
 id icon_only
-id id_countpeople_stadium_recycler_view
-id id_countpeople_text_stadium_recycler_view
-id id_mark_stadium_recycler_view
-id id_mark_text_stadium_recycler_view
-id id_name_stadium_recycler_view
-id id_photo_stadium_recycler_view
+id id_countpeople_stadium_recyclerview
+id id_countpeople_text_stadium_recyclerview
+id id_mark_stadium_recyclerview
+id id_mark_text_stadium_recyclerview
+id id_name_stadium_recyclerview
+id id_photo_stadium_recyclerview
 id id_recyclerViewAllStadiums
 id ifRoom
 id ignore
@@ -1915,6 +1916,7 @@ id outline
 id packed
 id parallax
 id parent
+id parentFrame
 id parentPanel
 id parentRelative
 id parent_matrix
@@ -2010,6 +2012,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textView
+id text_for_rw
 id text_input_end_icon
 id text_input_start_icon
 id textinput_counter
@@ -2127,6 +2130,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout layout_bottom_navigation_menu
 layout layout_chats_fragment_bottom_menu
 layout layout_for_one_stadium_recycler_view
 layout layout_main_activity
