@@ -8,20 +8,25 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.RecyclerView
 import com.example.shtormovoy_zaryad.R
 import com.example.shtormovoy_zaryad.ui.BottomMenuFragments.Fragment_Chats_BottomMenu
 import com.example.shtormovoy_zaryad.ui.BottomMenuFragments.Fragment_Profile_BottomMenu
 import com.example.shtormovoy_zaryad.ui.BottomMenuFragments.Fragment_Stadiums_BottomMenu
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import kotlinx.android.synthetic.main.layout_bottom_navigation_menu.*
 
 class FragmentWithBottomNavigation : Fragment() {
 
+    // Числовой код для проверки текущего открытого фрагмента
     private var currentFragmentCode = 0
 
+    // 3 фрагмента для экрана с BottomNavigation View
     private var fragmentStadiums = Fragment_Stadiums_BottomMenu()
     private var fragmentChats = Fragment_Chats_BottomMenu()
     private var fragmentProfile = Fragment_Profile_BottomMenu()
+
+    // Переменные для хранения ссылок на View-объекты
+    private lateinit var bottomNavigationView: BottomNavigationView
 
     override fun onCreateView(
         inflater: LayoutInflater,

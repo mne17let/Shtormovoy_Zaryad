@@ -1,6 +1,5 @@
 package com.example.shtormovoy_zaryad.ui.BottomMenuFragments
 
-import android.icu.lang.UCharacter
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -28,17 +27,17 @@ class Fragment_Stadiums_BottomMenu: Fragment(){
     }
 
     fun setAdapter(view: View) {
-        var recycler: RecyclerView = view.findViewById(R.id.id_recyclerViewAllStadiums)
-        var mylayoutManager = LinearLayoutManager(view.context, LinearLayoutManager.HORIZONTAL, true)
+        val recycler: RecyclerView = view.findViewById(R.id.id_recyclerViewAllStadiums)
+        val mylayoutManager = LinearLayoutManager(view.context, LinearLayoutManager.VERTICAL, true)
         recycler.layoutManager = mylayoutManager
-        var list = ArrayList<StadiumModel>()
+        val list = ArrayList<StadiumModel>()
 
-        var stadium1 = StadiumModel("Поле 1", 100, 6)
-        var stadium2 = StadiumModel("Поле 2", 0, 19)
-        var stadium3 = StadiumModel("Поле 3", 10, 14)
-        var stadium4 = StadiumModel("Поле 4", 15, 0)
-        var stadium5 = StadiumModel("Поле 5", 150, 9)
-        var stadium6 = StadiumModel("Поле 6", 6, 3)
+        val stadium1 = StadiumModel("Поле 1", 100, 6)
+        val stadium2 = StadiumModel("Поле 2", 0, 19)
+        val stadium3 = StadiumModel("Поле 3", 10, 14)
+        val stadium4 = StadiumModel("Поле 4", 15, 0)
+        val stadium5 = StadiumModel("Поле 5", 150, 9)
+        val stadium6 = StadiumModel("Поле 6", 6, 3)
 
         list.add(stadium1)
         list.add(stadium2)
@@ -47,11 +46,9 @@ class Fragment_Stadiums_BottomMenu: Fragment(){
         list.add(stadium5)
         list.add(stadium6)
 
-        var adapter = StadiumsFragmentRecyclerViewAdapter()
+        val adapter = StadiumsFragmentRecyclerViewAdapter()
         adapter.setList(list)
         recycler.adapter = adapter
-
-
 
     }
 }
