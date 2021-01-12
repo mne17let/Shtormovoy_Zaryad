@@ -1,4 +1,4 @@
-package com.example.shtormovoy_zaryad.ui.StadiumsFragmentRecyclerViewAdapter
+package com.example.shtormovoy_zaryad.ui.RecyclerViewAdapters
 
 import android.view.LayoutInflater
 import android.view.View
