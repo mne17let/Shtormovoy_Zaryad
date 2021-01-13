@@ -1,6 +1,5 @@
 package com.example.shtormovoy_zaryad.ui.ParentFragments
 
-import android.net.sip.SipSession
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.MenuItem
@@ -8,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.RecyclerView
 import com.example.shtormovoy_zaryad.R
 import com.example.shtormovoy_zaryad.ui.BottomMenuFragments.Fragment_Chats_BottomMenu
 import com.example.shtormovoy_zaryad.ui.BottomMenuFragments.Fragment_Profile_BottomMenu
@@ -33,15 +31,19 @@ class FragmentWithBottomNavigation : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.layout_bottom_navigation_menu, container, false)
+        val view = inflater.inflate(R.layout.layout_with_bottom_navigation, container, false)
         return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        init(view)
         showStartBottomNavigationFragment()
         setBottomNavigationItemListener()
     }
 
+    fun init(view: View) {
+        bottomNavigationView = view.findViewById(R.id.bottomNavigationView)
+    }
 
     fun showStartBottomNavigationFragment() {
         childFragmentManager.beginTransaction().replace(R.id.frameForBottomNavigationFragments, fragmentStadiums).commit()

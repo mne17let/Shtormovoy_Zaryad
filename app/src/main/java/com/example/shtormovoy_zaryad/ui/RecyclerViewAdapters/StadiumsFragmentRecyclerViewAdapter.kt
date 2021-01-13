@@ -1,11 +1,13 @@
 package com.example.shtormovoy_zaryad.ui.RecyclerViewAdapters
 
+import android.net.sip.SipSession
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.shtormovoy_zaryad.MainActivity
 import com.example.shtormovoy_zaryad.Model.ObjectModels.StadiumModel
 import com.example.shtormovoy_zaryad.R
 
@@ -34,6 +36,12 @@ class StadiumsFragmentRecyclerViewAdapter: RecyclerView.Adapter<StadiumsFragment
             mark.text = one_stadium.mark.toString()
             countPeople.text = one_stadium.countPeople.toString()
             photoStadium.setImageResource(R.drawable.photo_pole)
+            this.itemView.setOnClickListener(object : View.OnClickListener{
+                override fun onClick(v: View?) {
+                    MainActivity.mainActivity.replaceFragment()
+                }
+
+            })
         }
     }
 
@@ -53,4 +61,6 @@ class StadiumsFragmentRecyclerViewAdapter: RecyclerView.Adapter<StadiumsFragment
     override fun getItemCount(): Int {
         return arrayOfStadiums.size
     }
+
 }
+
