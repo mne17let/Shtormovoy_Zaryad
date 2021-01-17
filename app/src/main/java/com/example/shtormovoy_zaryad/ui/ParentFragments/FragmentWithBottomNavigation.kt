@@ -31,6 +31,8 @@ class FragmentWithBottomNavigation : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+        // "Надуваю" XML-макет
         val view = inflater.inflate(R.layout.layout_with_bottom_navigation, container, false)
         return view
     }
@@ -42,18 +44,25 @@ class FragmentWithBottomNavigation : Fragment() {
     }
 
     fun init(view: View) {
+        // Инициализирую переменную для доступа к элементам на экране
         bottomNavigationView = view.findViewById(R.id.bottomNavigationView)
     }
 
     fun showStartBottomNavigationFragment() {
+
+        // Ставлю стартовый фрагмент на экран с BottomNavigationView
         childFragmentManager.beginTransaction().replace(R.id.frameForBottomNavigationFragments, fragmentStadiums).commit()
     }
 
     fun showBottomNavigationFragment(fragment: Fragment) {
+
+        // Смена фрагментов по нажатию на кнопки BottomNavigationView
         childFragmentManager.beginTransaction().replace(R.id.frameForBottomNavigationFragments, fragment).commit()
     }
 
     fun checkingCurrentFragment(checkCode: Int) {
+
+        // Проверка, открыт ли уже фрагмент, за который отвечает нажатая кнопка на BottomNavigationView
         if (checkCode == currentFragmentCode) {
             Toast.makeText(context, "Same Fragment", Toast.LENGTH_SHORT).show()
             return
@@ -69,6 +78,8 @@ class FragmentWithBottomNavigation : Fragment() {
 
 
     fun setBottomNavigationItemListener() {
+
+        // Устанавливаю Listener нажатий на BottomNavigationView
         bottomNavigationView.setOnNavigationItemSelectedListener(object : BottomNavigationView.OnNavigationItemSelectedListener{
             override fun onNavigationItemSelected(item: MenuItem): Boolean {
                 when (item.itemId) {

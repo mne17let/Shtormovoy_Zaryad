@@ -30,12 +30,19 @@ class Fragment_Stadiums_BottomMenu: Fragment(){
     }
 
     fun setAdapter(view: View) {
+
+        // Создаю и инициализирую переменную RecyclerView. Затем создаю и назначаю LayoutManager для RecyclerView
         val recycler: RecyclerView = view.findViewById(R.id.id_recyclerViewAllStadiums)
         val mylayoutManager = LinearLayoutManager(view.context, LinearLayoutManager.VERTICAL, false)
         recycler.layoutManager = mylayoutManager
 
+        // Создаю фрагмент адаптера для RecyclerView с полями
         val adapter = StadiumsFragmentRecyclerViewAdapter()
+
+        // Устанавливаю список полей в адаптер. Перед этим получаю его из ViewModel
         adapter.setList(stadiumViewModel.getStadiumsForAdapter())
+
+        // Установка адаптера на RecyclerView
         recycler.adapter = adapter
 
     }
