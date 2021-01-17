@@ -28,7 +28,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun replaceFragment() {
-        supportFragmentManager.beginTransaction().replace(R.id.parentFrame, fragmentStadium).commit()
+        supportFragmentManager.beginTransaction().replace(R.id.parentFrame, fragmentStadium)
+            .addToBackStack(null).commit()
     }
 
     companion object {
