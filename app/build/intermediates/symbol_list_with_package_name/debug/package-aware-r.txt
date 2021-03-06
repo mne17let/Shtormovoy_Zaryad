@@ -1753,7 +1753,7 @@ id bottom
 id bottomMenuItemXML_Chat
 id bottomMenuItemXML_Profile
 id bottomMenuItemXML_Stadium
-id bottomNavigationView
+id bottomNavigationView_id
 id bounce
 id buttonPanel
 id cache_measures
@@ -1832,7 +1832,7 @@ id flip
 id floating
 id forever
 id fragment_container_view_tag
-id frameForBottomNavigationFragments
+id frameForBottomNavigationFragments_id
 id ghost_view
 id ghost_view_holder
 id glide_custom_view_target_tag
@@ -1851,12 +1851,10 @@ id icon_group
 id icon_only
 id id_countpeople_stadium_recyclerview
 id id_countpeople_text_stadium_recyclerview
-id id_main_layout_root
 id id_mark_stadium_recyclerview
 id id_mark_text_stadium_recyclerview
 id id_name_stadium_recyclerview
 id id_photo_stadium_recyclerview
-id id_recyclerViewAllStadiums
 id ifRoom
 id ignore
 id ignoreRequest
@@ -1926,7 +1924,7 @@ id outline
 id packed
 id parallax
 id parent
-id parentFrame
+id parentFrame_id
 id parentPanel
 id parentRelative
 id parent_matrix
@@ -1992,6 +1990,7 @@ id square
 id src_atop
 id src_in
 id src_over
+id stadiums_StadiumsList_RecyclerView_id
 id standard
 id start
 id startHorizontal
@@ -2021,7 +2020,6 @@ id textEnd
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
-id textView
 id textView2
 id text_input_end_icon
 id text_input_start_icon
@@ -2124,6 +2122,9 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_main_layout
+layout bottom_navigation_menu_layout_chats
+layout bottom_navigation_menu_layout_profile
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2140,13 +2141,8 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout layout_chats_fragment_bottom_menu
 layout layout_for_one_stadium_recycler_view
-layout layout_main_activity
-layout layout_profile_fragment_bottom_menu
 layout layout_stadium
-layout layout_stadiums_fragment_bottom_menu
-layout layout_with_bottom_navigation
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -2181,9 +2177,11 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout parent_layout_with_bottom_navigation
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout stadiums_stadiumslist_layout
 layout support_simple_spinner_dropdown_item
 layout test_action_chip
 layout test_chip_zero_corner_radius

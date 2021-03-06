@@ -1,10 +1,9 @@
 package com.example.shtormovoy_zaryad
 
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import com.example.shtormovoy_zaryad.ui.ParentFragments.FragmentStadium
-import com.example.shtormovoy_zaryad.ui.ParentFragments.FragmentWithBottomNavigation
+import com.example.shtormovoy_zaryad.ParentFragments.FragmentStadium
+import com.example.shtormovoy_zaryad.ParentFragments.FragmentWithBottomNavigation
 
 
 
@@ -21,13 +20,13 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.layout_main_activity)
+        setContentView(R.layout.activity_main_layout)
         setStartFragment()
     }
 
     fun setStartFragment() {
         // Ставлю на экран стартовый фрагмент - фрагмент с BottomNavigationView
-        supportFragmentManager.beginTransaction().replace(R.id.parentFrame, fragmentBottomNavigation).commit()
+        supportFragmentManager.beginTransaction().replace(R.id.parentFrame_id, fragmentBottomNavigation).commit()
     }
 
     fun showOneStadiumFragment(id: String) {
@@ -37,9 +36,9 @@ class MainActivity : AppCompatActivity() {
         bundleForStadium.putString("StadiumId", id)
         fragmentStadium.arguments = bundleForStadium
 
-        Log.d("VLADIMIR", "$id в MainActivity при создании фрагмента")
+        //Log.d("VLADIMIR", "$id в MainActivity при создании фрагмента")
 
-        supportFragmentManager.beginTransaction().replace(R.id.parentFrame, fragmentStadium)
+        supportFragmentManager.beginTransaction().replace(R.id.parentFrame_id, fragmentStadium)
             .addToBackStack(null).commit()
     }
 
